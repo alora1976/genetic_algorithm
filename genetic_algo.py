@@ -58,7 +58,7 @@ for generation in range (0,max_generations):
         Y=[creature[0]*x_val+creature[1] for x_val in x]
         mutant_scores.append(fitness(Y,y))
     best_score=min(mutant_scores)
-    beat_creature=mutant_list[mutant_scores.index(best_score)]
+    best_creature=mutant_list[mutant_scores.index(best_score)]
     
     creature_history.append(best_creature)
     score_history.append(step_size)
